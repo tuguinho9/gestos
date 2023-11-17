@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body id="body1">
+    <center>
+    <h1>App web de gestos com as mãos
+        <hr>
+    🤙👍✌👊👏🤟</h1>
+    <br>
+    <h3>Tire uma foto de um gesto para saber seu significado</h3>
+    <h3>O modelo está treinado nos seguintes gestos:</h3>
+    <h3>👍|🤙|✌</h3>
+    <div id="div1" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <h2>Visualização da Webcam</h2>
+        <div id="camera"></div>
+        <br>
+        <button id="capturar" class="btn btn-success" onclick="capturar()">Capturar imagem</button>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="div2">
+        <h2>Previsão</h2>
+        <br>
+        <p id="resultado1"></p>
+        <br>
+        <p id="emoji1"></p>
+        <br>
+        <p id="resultado2"></p>
+        <br>
+        <p id="emoji2"></p>
+    </div>
+    <div id="div3" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <h2>Foto</h2>
+        <div id="foto"></div>
+        <br>
+        <button id="previsao" class="btn btn-primary" onclick="previsao()">Prever gesto</button>
+    </div>
+    <script src="main.js"></script>
+</center>
+</body>
+</html>
